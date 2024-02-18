@@ -2,33 +2,33 @@
 
 ## Preview
 
-![01. 首页](./XF-Studio/readme/01. 首页.png)
+![01. 首页](./readme/01. 首页.png)
 
-![02. 新闻](./XF-Studio/readme/02. 新闻.png)
+![02. 新闻](./readme/02. 新闻.png)
 
-![03. 关于](./XF-Studio/readme/03. 关于.png)
+![03. 关于](./readme/03. 关于.png)
 
-![04. 概况](./XF-Studio/readme/04. 概况.png)
+![04. 概况](./readme/04. 概况.png)
 
-![05. 历程](./XF-Studio/readme/05. 历程.png)
+![05. 历程](./readme/05. 历程.png)
 
-![06. 部门](./XF-Studio/readme/06. 部门.png)
+![06. 部门](./readme/06. 部门.png)
 
 
 
-![07. 联系我们](./XF-Studio/readme/07. 联系我们.png)
+![07. 联系我们](./readme/07. 联系我们.png)
 
-![08. 相关链接](./XF-Studio/readme/08. 相关链接.png)
+![08. 相关链接](./readme/08. 相关链接.png)
 
-![09. 新闻页首页](./XF-Studio/readme/09. 新闻页首页.png)
+![09. 新闻页首页](./readme/09. 新闻页首页.png)
 
-![10. 新闻页1](./XF-Studio/readme/10. 新闻页1.png)
+![10. 新闻页1](./readme/10. 新闻页1.png)
 
-![11. 新闻页2](./XF-Studio/readme/11. 新闻页2.png)
+![11. 新闻页2](./readme/11. 新闻页2.png)
 
-![12. 移动端1](./XF-Studio/readme/12. 移动端1.jpg)
+![12. 移动端1](./readme/12. 移动端1.jpg)
 
-![13. 移动端2](./XF-Studio/readme/13. 移动端2.jpg)
+![13. 移动端2](./readme/13. 移动端2.jpg)
 
 ## Skill
 
