@@ -24,9 +24,7 @@
 
 <img src="./readme/11. 新闻页2.png" alt="11. 新闻页2" style="zoom:67%;" />
 
-<img src="./readme/12. 移动端1.jpg" alt="12. 移动端1" style="zoom:67%;" />
-
-<img src="./readme/13. 移动端2.jpg" alt="13. 移动端2" style="zoom:67%;" />
+<img src="./readme/12. 移动端.jpg" alt="12. 移动端" style="zoom:67%;" />
 
 ## Skill
 
