@@ -1,0 +1,327 @@
+// out: ./
+
+// 网站字体
+@font-face {
+    font-family: "HarmonyOS";
+    src: url("./font/HarmonyOS.ttf");
+}
+
+body {
+    font-family: "Harmony";
+}
+
+// 网站主题色
+@color: #1A5599;
+
+// 媒体查询，更改 bootstrap 中的默认样式
+@media (max-width: 575px) {
+    .wrapper {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+    .wrapper {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1200px;
+    }
+    .wrapper {
+        max-width: 1000px;
+    }
+}
+
+// --- 公共样式 ---
+
+// 灰色
+.grey {
+    color: #797b79;
+}
+
+// 版心
+.wrapper {
+    margin: 0 auto;
+}
+
+// my 即 margin-y，控制每个板块与上一个板块的间距
+.my {
+    margin: 3rem auto;
+    // 移动端时，调小间距
+    @media (max-width: 768px) {
+        margin: 1em auto;
+    }
+}
+
+// 按钮
+.btn-primary {
+    background-color: @color;
+    &:hover {
+        background-color: #003153;
+    }
+}
+
+// 标题下的短横线
+.title {
+    .line {
+        display: block;
+        margin: 0 auto;
+        width: 3rem;
+        height: 0.12rem;
+        background-color: @color;
+    }
+}
+
+ul {
+    padding-left: 0;
+    li {
+        transition: all .5s;
+    }
+}
+
+// 日期图标与日期的间距
+i {
+    padding-right: 0.5rem;
+}
+
+//  标题与内容的间距
+.main-mt {
+    margin-top: 3rem;
+}
+
+// 鼠标悬停时的动画
+.box-hover {
+    &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0px 5px 3px rgba(127, 127, 127, .1);
+    }
+}
+
+// 图标
+.ico {
+    color: @color;
+    font-size: 1.2rem;
+}
+
+// 字间距
+.spacing {
+        letter-spacing: 0.1rem;
+}
+
+// 日期图标
+.bi-calendar-week {
+    font-size: 0.5rem;
+}
+
+// 锚点偏移，防止因导航栏固定定位导致的内容遮盖
+#news, #about, #departs, #contact {
+    scroll-margin-top: 3rem;
+}
+
+// --- 以上为公共样式 ---
+
+// 导航
+.navbar {
+    background-color: #fff;
+    li a:hover {
+        color: @color!important;
+        font-weight: 700;
+    }
+}
+
+// Home
+#home {
+    padding: 15rem 5rem;
+    .main {
+        // 将 logo 固定尺寸后，使用 flex:1 让左侧内容填充
+        flex: 1;
+        h1 {
+            font-weight: 700;
+        }
+    }
+    .logo {
+        width: 10rem;
+        height: 10rem;
+    }
+    @media (max-width: 768px) {
+        position: relative;
+        padding-top: 20rem!important;
+        padding-bottom: 0;
+        margin-bottom: 2em;
+        .logo {
+            position: absolute;
+            top: 8rem;
+            left: 0;
+        }
+    }
+}
+
+// 新闻
+#news {
+    ul {
+        li {
+            img[alt='top'] {
+                position: absolute;
+                left: -0.2rem;
+                top: -0.1rem;
+                width: 3rem;
+            }
+        }
+    }
+    @media (max-width: 1400px) {
+        ul {
+            // 当设备小于 1400px 时，主页只显示两条新闻
+            li:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 992px) {
+        ul {
+            // 调整布局为居中，使新闻居中显示
+            justify-content: center!important;
+            li {
+                margin-bottom: 1rem;
+                width: 100%!important;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        ul {
+            li {
+                width: 110%!important;
+            }
+        }
+    }
+}
+
+
+// 关于
+#about {
+    .main {
+        .left {
+            img {
+                transition: all .5s;
+                width: 25rem;
+            }
+            @media (min-width: 768px) {
+                margin-right: 2rem;
+            }
+        }
+        @media (min-width: 992px) {
+            .right {
+                width: 50%;
+            }
+        }
+        .count {
+            @media (max-width: 768px) {
+                .people {
+                    padding: 1rem;
+                }
+                .depart {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
+
+// 概况
+#overview {
+    li {
+        padding: .3rem 0;
+        // 百分比至于最右
+        .percent {
+            float: right;
+        }
+        // 将进度条与标题拉开距离
+        .progress {
+            margin-top: .3rem;
+        }
+    }
+}
+
+// 历程
+#history {
+    li {
+        margin: 2rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// 部门
+#departs {
+    .main {
+        div {
+            margin: 5rem 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:nth-child(1),&:nth-child(3) {
+                padding-left: 1rem;
+                border-left: 3px solid @color;
+            }
+            &:nth-child(2),&:nth-child(4) {
+                padding-right: 1rem;
+                border-right: 3px solid @color;
+            }
+        }
+        h5 {
+            color: @color;
+        }
+    }
+}
+
+// 相关链接
+#links {
+    .main {
+        img {
+            width: 10rem;
+            @media (max-width: 768px) {
+                width: 7rem;
+            }
+        }
+    }
+}
+
+// Footer
+footer {
+    background-color: @color;
+    color: #fff;
+    margin-bottom: 0!important;
+}

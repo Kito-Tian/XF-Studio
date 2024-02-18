@@ -1,0 +1,30 @@
+/* 预设样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+em, i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+}
+
+input {
+    border: none;
+    outline: none;
+    color: #333;
+}

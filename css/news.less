@@ -1,0 +1,227 @@
+// out: ./
+
+// 网站字体
+@font-face {
+    font-family: "HarmonyOS";
+    src: url("../font/HarmonyOS.ttf");
+}
+
+body {
+    font-family: "Harmony";
+}
+
+// 网站主题色
+@color: #1A5599;
+
+// 媒体查询，更改 bootstrap 中的默认样式
+@media (max-width: 575px) {
+    .wrapper {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 576px) {
+    .wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+    .wrapper {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1200px;
+    }
+    .wrapper {
+        max-width: 1000px;
+    }
+}
+
+// --- 公共样式 ---
+
+// 灰色
+.grey {
+    color: #797b79;
+}
+
+// 版心
+.wrapper {
+    margin: 0 auto;
+}
+
+// my 即 margin-y，控制每个板块与上一个板块的间距
+.my {
+    margin: 3rem auto;
+    // 移动端时，调小间距
+    @media (max-width: 768px) {
+        margin: 1em auto;
+    }
+}
+
+// 按钮
+.btn-primary {
+    background-color: @color;
+    &:hover {
+        background-color: #003153;
+    }
+}
+
+// 标题下的短横线
+.title {
+    .line {
+        display: block;
+        margin: 0 auto;
+        width: 3rem;
+        height: 0.12rem;
+        background-color: @color;
+    }
+}
+
+ul {
+    padding-left: 0;
+    li {
+        transition: all .5s;
+        span {
+            float: left;
+            margin-right: 0.2rem;
+            color: red;
+        }
+    }
+}
+
+// 日期图标与日期的间距
+i {
+    padding-right: 0.5rem;
+}
+
+//  标题与内容的间距
+.main-mt {
+    margin-top: 3rem;
+}
+
+// 鼠标悬停时的动画
+.box-hover {
+    &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0px 5px 3px rgba(127, 127, 127, .1);
+    }
+}
+
+// 图标
+.ico {
+    color: @color;
+    font-size: 1.2rem;
+}
+
+// 字间距
+.spacing {
+        letter-spacing: 0.1rem;
+}
+
+// 日期图标
+.bi-calendar-week {
+    font-size: 0.5rem;
+}
+
+// 锚点偏移，防止因导航栏固定定位导致的内容遮盖
+#news, #about, #departs, #contact {
+    scroll-margin-top: 3rem;
+}
+
+// --- 以上为公共样式 ---
+
+// 以下样式针对新闻页
+#news {
+    .main {
+        @media (max-width: 768px) {
+            .title {
+                margin-top: 0.5rem;
+            }
+            .date {
+                margin-top: 0.5rem;
+            }
+        }
+        .date {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// 以下样式针对新闻详情页
+main {
+    padding: 8rem 2rem;
+    .title {
+        margin-bottom: 2rem;
+    }
+    .content {
+        text-indent: 4ch;
+        img {
+            display: block;
+            margin: 2rem auto;
+            width: 50%;
+            border-radius: 0.3rem;
+        }
+    }
+    @media (max-width: 768px) {
+        padding-top: 8rem!important;
+        padding-bottom: 0;
+        margin-bottom: 2em;
+        img {
+            width: 100%!important;
+        }
+    }
+}
+
+// 导航
+.navbar {
+    background-color: #fff;
+    li a:hover {
+        color: @color!important;
+        font-weight: 700;
+    }
+}
+
+
+
+// Footer
+footer {
+    background-color: @color;
+    color: #fff;
+    margin-bottom: 0!important;
+}
+
+// 按钮
+.newbtn {
+    padding: 0.7rem 1rem;
+    margin: 0 0.7rem 1rem;
+    transition: all .3s;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 2px solid black;
+    &:hover {
+        transform: translateY(-0.1rem);
+        box-shadow: 0px 5px 3px rgba(127, 127, 127, .1);
+        background-color: black;
+        color: #fff;
+    }
+}

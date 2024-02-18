@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻 - 讯飞工作室 - 技术成就未来</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../lib/bootstrap-5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/base.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-expand-md fixed-top p-3">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand spacing">讯飞工作室</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link spacing">首页</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link spacing">新闻</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link spacing">博客</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link spacing">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="p-5 wrapper my spacing" id="news">
+        <div class="title mt-5">
+            <h2 class="text-center">新闻</h2>
+            <span class="line"></span>
+            <p class="text-center">News</p>
+        </div>
+        <div class="main main-mt">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="title float-md-start d-md-inline">
+                        <a href="./recruit.html">我们招新啦！</a>
+                    </div>
+                    <div class="date float-md-end d-md-inline">
+                        <span class="d-inline-flex align-items-center grey"><i class="bi bi-calendar-week"></i>2023年9月1日</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="title float-md-start d-md-inline">
+                        <a href="./001.html">2023开学季 | 新朋友，来见面！</a>
+                    </div>
+                    <div class="date float-md-end d-md-inline">
+                        <span class="d-inline-flex align-items-center grey"><i class="bi bi-calendar-week"></i>2023年9月6日</span>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="title float-md-start d-md-inline">
+                        <a href="./001.html">2023迎新篇 | 新朋友，来打卡！</a>
+                    </div>
+                    <div class="date float-md-end d-md-inline">
+                        <span class="d-inline-flex align-items-center grey"><i class="bi bi-calendar-week"></i>2023年8月31日</span>
+                    </div>
+                </li>
+              </ul>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="p-5 wrapper my spacing" id="contact">
+        <div class="title">
+            <h2 class="text-center">联系我们</h2>
+            <span class="line"></span>
+            <p class="text-center">Contact us</p>
+        </div>
+        <div class="main main-mt">
+            <div class="phone d-flex">
+                <div class="left p-3">
+                    <i class="bi bi-telephone-fill ico"></i>
+                </div>
+                <div class="right">
+                    <h4>电话</h4>
+                    <p>13033269895</p>
+                </div>
+            </div>
+            <div class="wechat d-flex">
+                <div class="left p-3">
+                    <i class="bi bi-wechat ico"></i>
+                </div>
+                <div class="right">
+                    <h4>公众号</h4>
+                    <p>讯飞工作室</p>
+                </div>
+            </div>
+            <div class="email d-flex">
+                <div class="left p-3">
+                    <i class="bi bi-envelope-fill ico"></i>
+                </div>
+                <div class="right">
+                    <h4>邮箱</h4>
+                    <p>XF-Studio@foxmail.com</p>
+                </div>
+            </div>
+            <div class="position d-flex">
+                <div class="left p-3">
+                    <i class="bi bi-signpost-fill ico"></i>
+                </div>
+                <div class="right">
+                    <h4>位置</h4>
+                    <p>工程实训楼 321，红河学院</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-5 my text-center">
+        <div class="wrapper">
+            <p class="lead">Copyright 讯飞工作室 2023</p>
+        </div>
+    </footer>
+
+    <script src="../lib/bootstrap-5.3.0/js/bootstrap.bundle.js"></script>
+    <script>
+        // 第一个 li 添加置顶
+        const newsContainer = document.getElementById("news");
+        const ulElement = newsContainer.querySelector("ul");
+        const firstLiElement = ulElement.querySelector("li:first-child");
+        const firstA = firstLiElement.querySelector("a")
+        firstA.innerHTML += '<span>[置顶]</span>';
+    </script>
+</body>
+</html>

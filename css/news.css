@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "HarmonyOS";
+  src: url("../font/HarmonyOS.ttf");
+}
+body {
+  font-family: "Harmony";
+}
+@media (max-width: 575px) {
+  .wrapper {
+    max-width: 400px;
+  }
+}
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  .wrapper {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
+  .wrapper {
+    max-width: 1000px;
+  }
+}
+.grey {
+  color: #797b79;
+}
+.wrapper {
+  margin: 0 auto;
+}
+.my {
+  margin: 3rem auto;
+}
+@media (max-width: 768px) {
+  .my {
+    margin: 1em auto;
+  }
+}
+.btn-primary {
+  background-color: #1A5599;
+}
+.btn-primary:hover {
+  background-color: #003153;
+}
+.title .line {
+  display: block;
+  margin: 0 auto;
+  width: 3rem;
+  height: 0.12rem;
+  background-color: #1A5599;
+}
+ul {
+  padding-left: 0;
+}
+ul li {
+  transition: all 0.5s;
+}
+ul li span {
+  float: left;
+  margin-right: 0.2rem;
+  color: red;
+}
+i {
+  padding-right: 0.5rem;
+}
+.main-mt {
+  margin-top: 3rem;
+}
+.box-hover:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0px 5px 3px rgba(127, 127, 127, 0.1);
+}
+.ico {
+  color: #1A5599;
+  font-size: 1.2rem;
+}
+.spacing {
+  letter-spacing: 0.1rem;
+}
+.bi-calendar-week {
+  font-size: 0.5rem;
+}
+#news,
+#about,
+#departs,
+#contact {
+  scroll-margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  #news .main .title {
+    margin-top: 0.5rem;
+  }
+  #news .main .date {
+    margin-top: 0.5rem;
+  }
+}
+#news .main .date {
+  font-size: 0.8rem;
+}
+main {
+  padding: 8rem 2rem;
+}
+main .title {
+  margin-bottom: 2rem;
+}
+main .content {
+  text-indent: 4ch;
+}
+main .content img {
+  display: block;
+  margin: 2rem auto;
+  width: 50%;
+  border-radius: 0.3rem;
+}
+@media (max-width: 768px) {
+  main {
+    padding-top: 8rem!important;
+    padding-bottom: 0;
+    margin-bottom: 2em;
+  }
+  main img {
+    width: 100%!important;
+  }
+}
+.navbar {
+  background-color: #fff;
+}
+.navbar li a:hover {
+  color: #1A5599 !important;
+  font-weight: 700;
+}
+footer {
+  background-color: #1A5599;
+  color: #fff;
+  margin-bottom: 0!important;
+}
+.newbtn {
+  padding: 0.7rem 1rem;
+  margin: 0 0.7rem 1rem;
+  transition: all 0.3s;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+.newbtn:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0px 5px 3px rgba(127, 127, 127, 0.1);
+  background-color: black;
+  color: #fff;
+}
