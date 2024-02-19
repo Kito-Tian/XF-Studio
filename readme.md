@@ -2,29 +2,29 @@
 
 ## Preview
 
-<img src="./readme/01. 首页.png" alt="01. 首页" style="zoom: 67%;" />
+![01](./readme/01.png)
 
-<img src="./readme/02. 新闻.png" alt="02. 新闻" style="zoom:67%;" />
+![02](./readme/02.png)
 
-<img src="./readme/03. 关于.png" alt="03. 关于" style="zoom:67%;" />
+![03](./readme/03.png)
 
-<img src="./readme/04. 概况.png" alt="04. 概况" style="zoom:67%;" />
+![04](./readme/04.png)
 
-<img src="./readme/05. 历程.png" alt="05. 历程" style="zoom:67%;" />
+![05](./readme/05.png)
 
-<img src="./readme/06. 部门.png" alt="06. 部门" style="zoom:67%;" />
+![06](./readme/06.png)
 
-<img src="./readme/07. 联系我们.png" alt="07. 联系我们" style="zoom:67%;" />
+![07](./readme/07.png)
 
-<img src="./readme/08. 相关链接.png" alt="08. 相关链接" style="zoom:67%;" />
+![08](./readme/08.png)
 
-<img src="./readme/09. 新闻页首页.png" alt="09. 新闻页首页" style="zoom:67%;" />
+![09](./readme/09.png)
 
-<img src="./readme/10. 新闻页1.png" alt="10. 新闻页1" style="zoom:67%;" />
+![10](./readme/10.png)
 
-<img src="./readme/11. 新闻页2.png" alt="11. 新闻页2" style="zoom:67%;" />
+![11](./readme/11.png)
 
-<img src="./readme/12. 移动端.jpg" alt="12. 移动端" style="zoom:67%;" />
+![12](./readme/12.jpg)
 
 ## Skill
 
@@ -64,3 +64,4 @@ CSS 框架，有很多基本样式（如首页的新闻卡片、导航栏等）
 5. V2.0 版本？
 
    目前正在制作 V2.0 版本，使用主流的 Vue、SpringBoot 等多种框架，拥有增加新闻、审核新闻、账号管理、人员管理、首页信息设置等多种功能，敬请期待...
+
